@@ -34,6 +34,7 @@ body {
     justify-content: center;
     position: fixed;
     z-index: 1;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
 }
 .logo {
     font-family: 'Alex Brush';
@@ -48,17 +49,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-.navbar .btn {
+.btn {
+    text-align: center;
     margin-top: 80px;
     padding: 15px;
     background-color: #005246;
-    border-radius: 15%;
+    border-radius: 15px;
     font-size: 22px;
 }
-.navbar a .btn:hover {
+.btn:hover {
     transform: scale(1.25);
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.6));
 }
 .line {
     background-color: #B5A36E;
