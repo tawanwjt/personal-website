@@ -18,6 +18,7 @@
     box-sizing: border-box;
     color: #FFF0CA;
     text-decoration: none;
+    /* border: none !important; */
 }
 
 body {
@@ -26,14 +27,15 @@ body {
 }
 
 .all-elements {
-    border: 3px solid red;
+    border: 5px solid red;
 }
 
-.devider {
+.divider {
     background-color: violet;
     width: 100%;
     height: 5vh;
     margin-top: 5%;
+    margin-bottom: 3%;
 
     border: 2px solid rgb(150, 0, 219);
 }
@@ -111,14 +113,17 @@ body {
 }
 
 /* This is for 'home' page */
-.home-page {
+.content-area {
     position: relative;
+    margin-left: 16.66%;
+    margin-right: 16.66%;
     border: 5px solid rgb(67, 247, 229);
+    
 }
 /* Content */
-.content {
+.home-content {
     position: relative;
-    margin-top: 7%;
+    margin-top: 16.66vh;
     margin-left: 28%;
     width: 58.33%;
     
@@ -171,3 +176,63 @@ body {
 }
 
 /* This is for 'about' page */
+.about-page {
+    position: relative;
+    margin-left: 16.66%;
+
+    border: 5px solid rgb(85, 247, 67);
+}
+.header h2 {
+    color: #005246;
+    font-size: 92px;
+    line-height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid indianred;
+}
+.personal {
+    margin-top: 8.33%;
+    border: 2px solid orangered;
+}
+.personal-topic, .personal-body {
+    border: 2px solid olivedrab;
+}
+.personal-topic {
+    /* display: flex; */
+    display: flex;
+    align-items: center;
+}
+.topic-text {
+    width: 30%;
+    margin-right: 1%;
+
+    border: 3px solid red;
+}
+.topic-text h3{
+    color: #005246;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 33px;
+    
+    border: 2px solid rgb(0, 47, 255);
+}
+.topic-line {
+    background-color: #005246;
+    height: 5px;
+    width: 75%;
+    
+}
+
+.personal-body {
+    line-height: 26px;
+    width: 41.66%;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 50px;
+    width: 57%;
+    
+
+    background-color: #B5A36E;
+}
