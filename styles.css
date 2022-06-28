@@ -29,6 +29,15 @@ body {
     border: 3px solid red;
 }
 
+.devider {
+    background-color: violet;
+    width: 100%;
+    height: 5vh;
+    margin-top: 5%;
+
+    border: 2px solid rgb(150, 0, 219);
+}
+
 /* Header */
 .logo-bar {
     width: 100%;
@@ -52,7 +61,7 @@ body {
 
 /* Side Navbar */
 .side-navbar {
-    position: absolute;
+    position: fixed;
     height: 100%;
     display: flex;
     flex-direction: column;
