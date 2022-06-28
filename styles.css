@@ -56,11 +56,23 @@ body {
     padding: 15px;
     background-color: #005246;
     border-radius: 15px;
+}
+.btn-text {
     font-size: 22px;
+    
+}
+.btn-pic {
+    display: none;
 }
 .btn:hover {
     transform: scale(1.25);
     filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.6));
+}
+.btn:hover .btn-text {
+    display: none;
+}
+.btn:hover .btn-pic {
+    display: block;
 }
 .line {
     background-color: #B5A36E;
@@ -71,6 +83,7 @@ body {
     z-index: -1;
 }
 
+/* This is for home page */
 /* Content */
 .content {
     position: absolute;
