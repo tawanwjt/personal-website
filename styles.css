@@ -123,9 +123,10 @@ html, body {
 /* Content area of each page */
 .content-area {
     position: relative;
-    /* margin-top: 8.33%; */
+    padding-top: 85px;
     margin-left: 16.66%;
     margin-right: 16.66%;
+    margin-bottom: 8.33vh;
     border: 5px solid rgb(67, 247, 229);
     
 }
@@ -187,6 +188,8 @@ html, body {
     text-decoration: underline;
 }
 
+/* ******************************************************** */
+
 /* This is for 'about' page */
 .about-page {
     position: relative;
@@ -203,9 +206,30 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8.33vh;
 
     border: 2px solid indianred;
+}
+
+/* This is for every topic */
+.topic {
+    display: flex;
+    align-items: center;
+}
+h3.topic-text{
+    color: #005246;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 33px;
+    width: max-content;
+    margin-right: 1%;
+    
+    border: 2px solid rgb(0, 47, 255);
+}
+.topic-line {
+    background-color: #005246;
+    height: 5px;
+    flex: auto;
+    
 }
 
 /* Personal Block */
@@ -214,40 +238,16 @@ html, body {
 
     border: 2px solid orangered;
 }
-.personal-topic, .personal-body {
+.topic, .personal-details {
     border: 2px solid olivedrab;
 }
-.personal-topic {
-    /* display: flex; */
-    display: flex;
-    align-items: center;
-}
-.topic-text {
-    width: 30%;
-    margin-right: 1%;
-
-    border: 3px solid red;
-}
-.topic-text h3{
-    color: #005246;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 33px;
-    
-    border: 2px solid rgb(0, 47, 255);
-}
-.topic-line {
-    background-color: #005246;
-    height: 5px;
-    width: 75%;
-    
-}
-.personal-body {
+.personal-details {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.personal-body-text {
+.personal-details-text {
+    font-weight: 300;
     line-height: 26px;
     width: 41.66%;
     padding: 3%;
@@ -258,7 +258,7 @@ html, body {
 
     border: 2px solid orchid;
 }
-.personal-body-pic {
+.personal-details-pic {
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
@@ -267,7 +267,123 @@ html, body {
 
     border: 2px solid rgb(45, 45, 45);
 }
-.personal-body-pic img {
+.personal-details-pic img {
     position: relative;
     top: -60px;
+}
+
+/* Education Block */
+.edu {
+    border: 2px solid rgb(252, 0, 206);
+}
+.edu-details {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+
+    border: 2px solid saddlebrown;
+}
+/* KMITL */
+.kmitl {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3% 0;
+
+    border: 3px solid teal;
+}
+.kmitl-timeline {
+    width: 65%;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 3%;
+    border-radius: 50px;
+    background-color: #B5A36E;
+}
+.kmitl-timeline .indent {
+    text-indent: 125px;
+}
+.kmitl-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+.kmitl-pic img {
+    position: relative;
+    right: 8px;
+}
+/* DSU */
+.dsu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3% 0;
+
+    border: 3px solid #005246;
+}
+.dsu-timeline {
+    font-weight: 300;
+    line-height: 26px;
+    padding: 3%;
+    border-radius: 50px;
+    background-color: #B5A36E;
+    display: flex;
+    align-items: center;
+}
+.dsu-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #FFF;
+
+    border: 2px solid black;
+}
+
+/* Skills Block */
+i {
+    color: #005246;
+    margin-right: 10%;
+    font-size: 10px;
+}
+
+.skills {
+    margin-bottom: 8.33vh;
+    
+    border: 5px solid rgb(51, 7, 227);
+}
+.skills-details {
+    background-color: #B5A36E;
+    border-radius: 50px;
+    border: 2px solid slateblue;
+}
+.skills-details-text {
+    font-weight: 300;
+    line-height: 26px;
+    padding: 2%;
+}
+.skills-details-lan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border: 3px solid plum;
+}
+.lan-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+}
+.first-col, .second-col {
+    
+    
+    border: 2px solid rgb(208, 21, 37);
+}
+.html, .css, .js, .py, .node, .sql {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 4%; */
+
+    border: 1px solid pink;
 }
