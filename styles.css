@@ -32,7 +32,7 @@ html, body {
 
 .all-elements {
 
-    border: 5px solid red;
+    border: 2px solid red;
 }
 
 /* Side Navbar */
@@ -46,7 +46,7 @@ html, body {
     align-items: center;
     background-color: #B5A36E;
 
-    border: 3px solid hotpink;
+    border: 2px solid hotpink;
 }
 .logo {
     width: 100%;
@@ -114,14 +114,6 @@ html, body {
 .btn:hover .btn-pic {
     display: block;
 } */
-/* .line {
-    background-color: #B5A36E;
-    height: 100%;
-    width: 30px;
-    position: absolute;
-    top: 0%;
-    z-index: -1;
-} */
 .social {
     display: flex;
 
@@ -140,9 +132,26 @@ html, body {
     margin-left: 25%;
     margin-right: 8.33%;
     margin-bottom: 8.33vh;
-    border: 5px solid rgb(67, 247, 229);
-    
+
+    border: 2px solid rgb(67, 247, 229);
 }
+
+/* Header for each page */
+.header {
+    width: 100%;
+    text-align: center;
+
+    border: 2px solid teal;
+}
+.header h2 {
+    color: #005246;
+    font-size: 92px;
+    line-height: 121px;
+
+    border: 2px solid indianred;
+}
+
+/* ******************************************************** */
 
 /* This is for 'home' page */
 /* Content */
@@ -153,7 +162,7 @@ html, body {
     margin-left: 16.66vw;
     width: 58.33%;
     
-    border: 3px solid salmon;
+    border: 2px solid salmon;
 }
 .text-box {
     background-color: #B5A36E;
@@ -161,7 +170,7 @@ html, body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     padding: 3% 3% 1% ;
 
-    border: 3px solid seagreen;
+    border: 2px solid seagreen;
 }
 .bg-text-box {
     position: absolute;
@@ -204,24 +213,6 @@ html, body {
 /* ******************************************************** */
 
 /* This is for 'about' page */
-.about-page {
-    position: relative;
-    margin-left: 16.66%;
-
-    border: 5px solid rgb(85, 247, 67);
-}
-
-/* header */
-.header h2 {
-    color: #005246;
-    font-size: 92px;
-    line-height: 121px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid indianred;
-}
 
 /* This is for every topic */
 .topic {
@@ -303,7 +294,7 @@ h3.topic-text{
     justify-content: space-around;
     margin: 3% 0;
 
-    border: 3px solid teal;
+    border: 2px solid teal;
 }
 .kmitl-timeline {
     width: 65%;
@@ -333,7 +324,7 @@ h3.topic-text{
     justify-content: space-around;
     margin: 3% 0;
 
-    border: 3px solid #005246;
+    border: 2px solid #005246;
 }
 .dsu-timeline {
     font-weight: 300;
@@ -363,11 +354,12 @@ i {
 .skills {
     margin-bottom: 8.33vh;
     
-    border: 5px solid rgb(51, 7, 227);
+    border: 2px solid rgb(51, 7, 227);
 }
 .skills-details {
     background-color: #B5A36E;
     border-radius: 50px;
+
     border: 2px solid slateblue;
 }
 .skills-details-text {
@@ -380,7 +372,7 @@ i {
     flex-direction: row;
     justify-content: space-around;
 
-    border: 3px solid plum;
+    border: 2px solid plum;
 }
 .lan-text {
     font-weight: 300;
@@ -388,7 +380,6 @@ i {
     line-height: 21px;
 }
 .first-col, .second-col {
-    
     
     border: 2px solid rgb(208, 21, 37);
 }
@@ -404,6 +395,44 @@ i {
 /* ******************************************************** */
 
 /* This is for 'project' page */
+.header-description {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(15, 235, 85);
+}
+.header-description p {
+    color: #005246;
+}
+.header-description .line {
+    background-color: #005246;
+    width: 35%;
+    height: 1px;
+}
+.work-container {
+    height: 180px;
+    display: flex;
+    margin: 3% 0;
+
+    border: 1px solid slateblue;
+}
+.work-text, .work-pic {
+    width: 50%;
+    height: 100%;
+    border: 1px solid sienna;
+}
+.work-text {
+    display: flex;
+    flex-direction: column;
+}
+.work-name, .work-detials, .work-link {
+    width: 100%;
+    height: 60px;
+
+    border: 1px solid seagreen;
+}
 
 /* ******************************************************** */
 
