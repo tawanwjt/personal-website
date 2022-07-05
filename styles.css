@@ -27,7 +27,7 @@ html, body {
     color: #FFF0CA;
     text-decoration: none;
     
-    border: none !important;
+    /* border: none !important; */
 }
 
 .all-elements {
@@ -113,12 +113,17 @@ a.first-btn {
 }
 .social {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
 
     border: 2px solid palevioletred;
 }
+.instagram, .facebook, .twitter, .github {
+    
+    border: 1px solid black;
+}
 .fa-brands {
-    margin: 15px;
-    font-size: 20px;
+    font-size: 21px;
     color: #FFF0CA;
 }
 
