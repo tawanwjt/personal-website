@@ -263,15 +263,30 @@
                 <div class="header">
                     <h2>Contact</h2>
                 </div>
-                <div class="msg-form">
+                <div class="topic">
                     <h3 class="topic-text">Send me a message</h3>
+                </div>
+                <div class="form">
                     <form action="#">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="text" name="subject" id="subject" placeholder="Subject"><br>
-                        <input type="text" name="email" id="email" placeholder="Email"><br>
-                        <input type="text" name="message" id="message" placeholder="Message"><br>
-                        <input type="submit" value="Send">
-
+                        <div class="form-block">
+                            <div class="row first-row">
+                                <div class="name-field">
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                </div>
+                                <div class="subject-field">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="text" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="row">
+                                <input type="text" name="message" id="message" placeholder="Message">
+                            </div>
+                            <div class="send-btn">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
