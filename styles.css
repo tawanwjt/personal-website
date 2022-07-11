@@ -30,10 +30,10 @@ html, body {
     /* border: none !important; */
 }
 
-.all-elements {
+/* .all-elements {
 
     border: 2px solid red;
-}
+} */
 
 /* Side Navbar */
 
@@ -46,7 +46,7 @@ html, body {
     align-items: center;
     background-color: #B5A36E;
 
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
 }
 .logo {
     width: 100%;
@@ -57,7 +57,7 @@ html, body {
     justify-content: center;
     /* text-align: center; */
 
-    border: 1px solid aquamarine;
+    /* border: 1px solid aquamarine; */
 }
 .logo a {
     color: #005246;
@@ -76,13 +76,13 @@ html, body {
     display: flex;
     flex-direction: column;
 
-    border: 2px solid indigo;
+    /* border: 2px solid indigo; */
 }
 .navbar a {
     width: 100%;
     margin-top: 20px;
 
-    border: 3px solid rgb(43, 226, 162);
+    /* border: 3px solid rgb(43, 226, 162); */
 }
 a.first-btn {
     margin-top: 0;
@@ -93,35 +93,35 @@ a.first-btn {
     display: flex;
     align-items: center;
     
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 .btn-text {
     font-size: 24px;
     font-weight: bold;
     
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 .btn-pic {
     margin-left: 30px;
     margin-right: 20px;
 
-    border: 1px solid lawngreen;
+    /* border: 1px solid lawngreen; */
 }
 .btn:hover .hover-resize {
     transform: scale(1.3);
-    /* filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.6)); */
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
 }
 .social {
     display: flex;
     justify-content: space-around;
     width: 100%;
 
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
 }
-.instagram, .facebook, .twitter, .github {
+/* .instagram, .facebook, .twitter, .github {
     
     border: 1px solid black;
-}
+} */
 .fa-brands {
     font-size: 21px;
     color: #FFF0CA;
@@ -135,22 +135,43 @@ a.first-btn {
     margin-right: 8.33%;
     margin-bottom: 8.33vh;
 
-    border: 2px solid rgb(67, 247, 229);
+    /* border: 2px solid rgb(67, 247, 229); */
 }
 
 /* Header for each page */
 .header {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 .header h2 {
     color: #005246;
     font-size: 92px;
-    line-height: 121px;
 
-    border: 2px solid indianred;
+    /* border: 2px solid indianred; */
+}
+
+/* Subtitle for each page */
+.subtitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 2px solid rgb(15, 235, 85); */
+}
+.subtitle p {
+    color: #005246;
+    text-align: center;
+}
+.subtitle .line {
+    background-color: #005246;
+    width: 22%;
+    height: 1.5px;
 }
 
 /* ******************************************************** */
@@ -160,45 +181,35 @@ a.first-btn {
 .home-content {
     position: relative;
     margin-top: 8.33vh;
-    margin-bottom: 8.33vh;
     margin-left: 16.66vw;
-    width: 58.33%;
+    padding-bottom: 8.33vh;
+    width: 66.66%;
     
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 .text-box {
     background-color: #B5A36E;
     border-radius: 30px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.25);
     padding: 3% 3% 1% ;
 
-    border: 2px solid seagreen;
-}
-.bg-text-box {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 7%;
-    top: 12%;
-    z-index: -1;
-    background-color: #FFF0CA;
-    /* filter: blur(25px); */
-
-    border: 3px solid saddlebrown;
+    /* border: 2px solid seagreen; */
 }
 .title, .description, .more-details {
     display: flex;
     align-items: center;
     margin-bottom: 5%;
 
-    border: 2px solid rgb(214, 214, 4);
+    /* border: 2px solid rgb(214, 214, 4); */
 }
 .title {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
+    display: block;
 }
-.title .title-name {
+.title-name {
     font-size: 111px;
+    text-align: center;
 }
 .description {
     font-size: 18px;
@@ -225,11 +236,10 @@ h3.topic-text{
     color: #005246;
     font-size: 25px;
     font-weight: 500;
-    line-height: 33px;
     width: max-content;
     margin-right: 1%;
     
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
 }
 .topic-line {
     background-color: #005246;
@@ -239,14 +249,14 @@ h3.topic-text{
 }
 
 /* Personal Block */
-.personal {
+/* .personal {
     margin-top: 8.33%;
 
     border: 2px solid orangered;
-}
-.topic, .personal-details {
+} */
+/* .topic, .personal-details {
     border: 2px solid olivedrab;
-}
+} */
 .personal-details {
     display: flex;
     align-items: center;
@@ -254,15 +264,15 @@ h3.topic-text{
 }
 .personal-details-text {
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.5rem;
     width: 41.66%;
     padding: 3%;
     margin: 3% 0;
-    border-radius: 50px;
+    border-radius: 30px;
     width: 57%;
     background-color: #B5A36E;
 
-    border: 2px solid orchid;
+    /* border: 2px solid orchid; */
 }
 .personal-details-pic {
     border-radius: 50%;
@@ -271,7 +281,7 @@ h3.topic-text{
     height: 200px;
     top: 200px;
 
-    border: 2px solid rgb(45, 45, 45);
+    /* border: 2px solid rgb(45, 45, 45); */
 }
 .personal-details-pic img {
     position: relative;
@@ -279,32 +289,34 @@ h3.topic-text{
 }
 
 /* Education Block */
-.edu {
+/* .edu {
     border: 2px solid rgb(252, 0, 206);
-}
-.edu-details {
-    /* display: flex;
+} */
+/* .edu-details {
+    display: flex;
     align-items: center;
-    justify-content: space-around; */
+    justify-content: space-around;
 
     border: 2px solid saddlebrown;
-}
+} */
+
 /* KMITL */
 .kmitl {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 3% 0;
 
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 .kmitl-timeline {
     width: 65%;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.5rem;
     padding: 3%;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #B5A36E;
+    margin-left: 15%;
 }
 .kmitl-timeline .indent {
     text-indent: 125px;
@@ -313,7 +325,7 @@ h3.topic-text{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .kmitl-pic img {
     position: relative;
@@ -323,19 +335,20 @@ h3.topic-text{
 .dsu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 3% 0;
 
-    border: 2px solid #005246;
+    /* border: 2px solid #005246; */
 }
 .dsu-timeline {
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.5rem;
     padding: 3%;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #B5A36E;
     display: flex;
     align-items: center;
+    margin-left: 15%;
 }
 .dsu-pic {
     border-radius: 50%;
@@ -343,7 +356,7 @@ h3.topic-text{
     height: 150px;
     background-color: #FFF;
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* Skills Block */
@@ -356,17 +369,17 @@ i {
 .skills {
     margin-bottom: 8.33vh;
     
-    border: 2px solid rgb(51, 7, 227);
+    /* border: 2px solid rgb(51, 7, 227); */
 }
 .skills-details {
     background-color: #B5A36E;
-    border-radius: 50px;
+    border-radius: 30px;
 
-    border: 2px solid slateblue;
+    /* border: 2px solid slateblue; */
 }
 .skills-details-text {
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.5rem;
     padding: 2%;
 }
 .skills-details-lan {
@@ -374,45 +387,29 @@ i {
     flex-direction: row;
     justify-content: space-around;
 
-    border: 2px solid plum;
+    /* border: 2px solid plum; */
 }
 .lan-text {
     font-weight: 300;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 2rem;
 }
-.first-col, .second-col {
+/* .first-col, .second-col {
     
     border: 2px solid rgb(208, 21, 37);
-}
+} */
 .html, .css, .js, .py, .node, .sql {
     display: flex;
     flex-direction: row;
     align-items: center;
     /* margin: 4%; */
 
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 /* ******************************************************** */
 
 /* This is for 'project' page */
-.header-description {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid rgb(15, 235, 85);
-}
-.header-description p {
-    color: #005246;
-}
-.header-description .line {
-    background-color: #005246;
-    width: 35%;
-    height: 1px;
-}
 .work-container {
     height: 180px;
     display: flex;
@@ -440,43 +437,64 @@ i {
 
 /* This is for 'contact' page */
 .form {
-    margin-bottom: 3%;
+    padding: 5% 0 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .form-block {
+    /* margin-bottom: 22%; */
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .row {
-    margin: 10px 0;
+    /* margin: 3% 0; */
+    padding: 3%;
 
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
 }
 .first-row {
     display: flex;
 }
 .name-field {
-    margin-right: 30px;
+    margin-right: 5%;
 }
-::placeholder {
+.name-field, .subject-field {
+    width: 20vw;
+
+    /* border: 1px solid black; */
+}
+::placeholder, input[type=text] {
     color:  #005246;
     font-size: 16px;
-    /* padding-left: 10px; */
-  }
+}
 .row input[type=text] {
     background-color: #FFF0CA;
     border: 1px solid #005246;
-    height: 1.4rem;
+    height: 2rem;
     width: 100%;
+    padding-left: 0.5em;
+}
+#message {
+    height: 20vh;
 }
 .send-btn {
     text-align: end;
 }
+input[type=submit]:hover  {
+    color: #005246;
+    background-color: #FFF0CA;
+    font-weight: bold;
+    border: 2px solid #005246;
+    
+}
 input[type=submit] {
     background-color: #005246;
-    padding: 5px 10px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
