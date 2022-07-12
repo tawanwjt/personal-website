@@ -18,10 +18,10 @@ html, body {
     /* border: none !important; */
 }
 
-.all-elements {
+/* .all-elements {
 
     border: 2px solid red;
-}
+} */
 
 /* Navbar */
 
@@ -45,24 +45,26 @@ a.logo {
     margin-top: 50px;
     text-align: center;
 
-    border: 1px solid aquamarine;
+    /* border: 1px solid aquamarine; */
 }
 .line-divider {
-    background-color: #FFF0CA;
+    /* background-color: #FFF0CA; */
+    background-color: rgba(255, 240, 202, 0.4);
     width: 90%;
     height: 1px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .navbar {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     /* border: 2px solid indigo; */
 }
 .navbar a {
-    /* width: 100%; */
+    width: 100%;
     margin-top: 20px;
 
     /* border: 3px solid rgb(43, 226, 162); */
@@ -115,6 +117,13 @@ a.first-btn {
 .fa-brands:hover {
     color: #005246;
 }
+.copyright {
+    margin-top: 20px;
+}
+.copyright p {
+    font-size: 8px;
+    font-weight: 100;
+}
 
 /* Content area of each page */
 .content-area {
@@ -123,7 +132,7 @@ a.first-btn {
     margin-right: 8.33%;
     margin-bottom: 8.33vh;
 
-    border: 2px solid rgb(67, 247, 229);
+    /* border: 2px solid rgb(67, 247, 229); */
 }
 
 /* Header for each page */
@@ -178,7 +187,7 @@ h3.topic-text{
 }
 .topic-line {
     background-color: #005246;
-    height: 5px;
+    height: 3px;
     flex: auto;
 }
 
@@ -192,7 +201,7 @@ h3.topic-text{
     margin-bottom: 8.33vh;
     padding-bottom: 8.33vh;
 
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 .text-box {
     background-color: #B5A36E;
@@ -200,12 +209,12 @@ h3.topic-text{
     box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.25);
     padding: 30px 30px 0 30px;
 
-    border: 2px solid seagreen;
+    /* border: 2px solid seagreen; */
 }
 .title, .description, .more-details {
     margin-bottom: 30px;
 
-    border: 2px solid rgb(214, 214, 4);
+    /* border: 2px solid rgb(214, 214, 4); */
 }
 .title {
     font-size: 60px;
@@ -225,6 +234,7 @@ h3.topic-text{
     font-size: 16px;
     font-weight: lighter;
     text-decoration: underline;
+    padding-bottom: 20px;
 }
 
 /* ******************************************************** */
@@ -285,7 +295,8 @@ h3.topic-text{
 } */
 .pic-container {
     margin-right: 45px;
-    border: 1px solid black;
+
+    /* border: 1px solid black; */
 }
 .school {
     display: flex;
@@ -293,7 +304,7 @@ h3.topic-text{
     /* justify-content: space-around; */
     margin: 3% 0;
 
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 .school-timeline {
     width: 100%;
@@ -306,13 +317,13 @@ h3.topic-text{
 
     /* border: 1px solid black; */
 }
-.timeline-container {
+/* .timeline-container {
     border: 1px solid black;
-}
+} */
 /* KMITL */
-.timeline, .timeline-details {
+/* .timeline, .timeline-details {
     border: 1px solid #005246;
-}
+} */
 .timeline {
     min-width: fit-content;
 }
@@ -352,6 +363,7 @@ i {
     background-color: #B5A36E;
     border-radius: 30px;
     padding: 15px;
+    margin-top: 15px;
 
     /* border: 2px solid slateblue; */
 }
@@ -515,14 +527,16 @@ footer {
         flex-direction: row;
         justify-content: center;
         z-index: 1;
+        box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.3);
 
         /* border: 2px solid hotpink; */
     }
     a.logo {
-        font-size: 60px;
-        margin-top: 0;
-        margin-bottom: 10px;
+        font-size: 55px;
+        margin-top: 5px;
+        margin-left: 10px;
         width: fit-content;
+        height: 70px;
     
         /* border: 1px solid aquamarine; */
     }
@@ -530,19 +544,22 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     
-        border: 2px solid rgb(221, 47, 47);
+        /* border: 2px solid rgb(221, 47, 47); */
     }
-    .navbar a {
+    .navbar a:not(:first-child), .bar .copyright {
         display: none;
         margin-top: 0;
 
         /* border: 2px solid indigo; */
     }
+    .navbar a {
+        width: auto;
+    }
     .navbar a.icon {
         display: block;
-        text-align: right;
-        /* margin-right: 30px; */
+        margin-right: 30px;
     }
     .fa-bars {
         color: #005246;
@@ -563,6 +580,8 @@ footer {
     /* Content area of each page */
     .content-area {
         margin: 0 50px 8.33vh 50px;
+
+        /* border: 1px solid limegreen; */
     }
 
     /* Header for each page */
@@ -571,9 +590,10 @@ footer {
         border: 2px solid teal;
     } */
     .header h2 {
-        font-size: 50px;
+        font-size: 40px;
+        /* width: 100%; */
 
-        border: 2px solid indianred;
+        /* border: 2px solid indianred; */
     }
 
     /* Subtitle for each page */
@@ -581,7 +601,7 @@ footer {
         margin-top: 15px;
         margin-bottom: 15px;
 
-        border: 2px solid rgb(15, 235, 85);
+        /* border: 2px solid rgb(15, 235, 85); */
     }
     .subtitle p {
         font-size: 12px;
@@ -640,20 +660,19 @@ footer {
 
 
     /* Personal Block */
-    .personal {
+    /* .personal {
 
         border: 2px solid orangered;
-    }
-    .topic, .personal-details {
+    } */
+    /* .topic, .personal-details {
 
         border: 2px solid olivedrab;
-    }
+    } */
     .personal-details {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
         padding: 20px 0;
-
         justify-content: space-around;
     }
     .personal-details-text {
@@ -661,7 +680,7 @@ footer {
         margin: 10px 0;
         width: 100%;
     
-        border: 2px solid orchid;
+        /* border: 2px solid orchid; */
     }
     .personal-details-text p {
         font-size: 14px;
@@ -674,7 +693,7 @@ footer {
         height: 120px;
         top: 0;
 
-        border: 2px solid rgb(45, 45, 45);
+        border: 2px solid #B5A36E;
     }
     .personal-details-pic img {
         position: relative;
@@ -682,18 +701,18 @@ footer {
     }
 
     /* Education Block */
-    .edu {
+    /* .edu {
         border: 2px solid rgb(252, 0, 206);
-    }
-    .edu-details {
-        /* display: flex;
+    } */
+    /* .edu-details {
+        display: flex;
         align-items: center;
-        justify-content: space-around; */
+        justify-content: space-around;
 
         border: 2px solid saddlebrown;
-    } 
+    }  */
     .pic-container {
-        margin-right: 45px;
+        margin-right: 0;
 
         border: 1px solid black;
     }
@@ -761,7 +780,7 @@ footer {
         border-radius: 30px;
         padding: 10px;
 
-        border: 2px solid slateblue;
+        /* border: 2px solid slateblue; */
     }
     .skills-details-text {
         font-size: 14px;
@@ -841,7 +860,7 @@ footer {
         flex-direction: column;
         align-items: center;
 
-        border: 1px solid rebeccapurple;
+        /* border: 1px solid rebeccapurple; */
     }
     .footer-container .social {
         display: flex;
@@ -852,26 +871,29 @@ footer {
         /* border: 2px solid palevioletred; */
     }
     .footer-container .line-divider {
-        background-color: rgba(255, 240, 202, 0.3);
+        background-color: rgba(255, 240, 202, 0.4);
         width: 90%;
         height: 1px;
         margin-top: 8px;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         display: block;
 
         /* border: 1px solid seagreen; */
     }
     .footer-container .logo {
         font-size: 45px;
-
+        height: 40px;
         /* border: 1px solid saddlebrown; */
     } 
     .footer-container .copyright {
-        font-size: 7px;
-        font-weight: lighter;
+        margin-top: 6px;
         text-align: center;
 
         /* border: 1px solid slateblue; */
+    }
+    .footer-container .copyright p {
+        font-size: 7px;
+        font-weight: lighter;
     }
 }
 
