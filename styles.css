@@ -42,12 +42,10 @@ a.logo {
     font-size: 75px;
     font-family: 'Alex Brush';
     width: 100%;
-    height: 50px;
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
-    /* border: 1px solid aquamarine; */
+    border: 1px solid aquamarine;
 }
 .line-divider {
     background-color: #FFF0CA;
@@ -61,13 +59,13 @@ a.logo {
     display: flex;
     flex-direction: column;
 
-    border: 2px solid indigo;
+    /* border: 2px solid indigo; */
 }
 .navbar a {
     /* width: 100%; */
     margin-top: 20px;
 
-    border: 3px solid rgb(43, 226, 162);
+    /* border: 3px solid rgb(43, 226, 162); */
 }
 a.first-btn {
     margin-top: 0;
@@ -113,6 +111,9 @@ a.first-btn {
 .fa-brands {
     font-size: 21px;
     color: #FFF0CA;
+}
+.fa-brands:hover {
+    color: #005246;
 }
 
 /* Content area of each page */
@@ -480,6 +481,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* ******************************************************** */
+/* This is for footer */
+footer {
+    display: none;
+}
+
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -497,7 +504,8 @@ input[type=submit] {
 /* For Mobile */
 @media only screen and (max-width: 900px) {
     /* .all-elements {
-        width: 100vw;
+        
+        border: 1px solid red;
     } */
 
     /* fixed position navbar */
@@ -508,13 +516,15 @@ input[type=submit] {
         justify-content: center;
         z-index: 1;
 
-        border: 2px solid hotpink;
+        /* border: 2px solid hotpink; */
     }
     a.logo {
         font-size: 60px;
         margin-top: 0;
+        margin-bottom: 10px;
+        width: fit-content;
     
-        border: 1px solid aquamarine;
+        /* border: 1px solid aquamarine; */
     }
     .navbar {
         display: flex;
@@ -526,18 +536,19 @@ input[type=submit] {
     .navbar a {
         display: none;
         margin-top: 0;
-    
-        border: 2px solid indigo;
+
+        /* border: 2px solid indigo; */
     }
     .navbar a.icon {
         display: block;
         text-align: right;
+        /* margin-right: 30px; */
     }
     .fa-bars {
         color: #005246;
         font-size: 25px;
     }
-    .social {
+    .bar .social {
         display: none;
         /* display: flex;
         justify-content: space-around;
@@ -578,15 +589,15 @@ input[type=submit] {
     }
 
     /* topic in each page */
-    .topic {
+    /* .topic {
 
         border: 1px solid orangered;
-    }
+    } */
     h3.topic-text{
         font-size: 16px;
         font-weight: 500;
         
-        border: 2px solid rgb(0, 47, 255);
+        /* border: 2px solid rgb(0, 47, 255); */
     }
     .topic-line {
         height: 2px;    
@@ -810,6 +821,57 @@ input[type=submit] {
         border: none;
         border-radius: 30px;
         cursor: pointer;
+    }
+
+    /* ----------------------------------- */
+        /* footer */
+    /* ----------------------------------- */
+    footer {
+        width: 100vw;
+        height: 120px;
+        display: block;
+        background-color: #B5A36E;
+        color: #FFF0CA;
+        font-size: 21px;
+    }
+    .footer-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid rebeccapurple;
+    }
+    .footer-container .social {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 12px;
+    
+        /* border: 2px solid palevioletred; */
+    }
+    .footer-container .line-divider {
+        background-color: rgba(255, 240, 202, 0.3);
+        width: 90%;
+        height: 1px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: block;
+
+        /* border: 1px solid seagreen; */
+    }
+    .footer-container .logo {
+        font-size: 45px;
+
+        /* border: 1px solid saddlebrown; */
+    } 
+    .footer-container .copyright {
+        font-size: 7px;
+        font-weight: lighter;
+        text-align: center;
+
+        /* border: 1px solid slateblue; */
     }
 }
 
