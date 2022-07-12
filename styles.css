@@ -57,17 +57,17 @@ a.logo {
     margin-bottom: 10%;
 }
 .navbar {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
 
-    /* border: 2px solid indigo; */
+    border: 2px solid indigo;
 }
 .navbar a {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 20px;
 
-    /* border: 3px solid rgb(43, 226, 162); */
+    border: 3px solid rgb(43, 226, 162);
 }
 a.first-btn {
     margin-top: 0;
@@ -161,59 +161,7 @@ a.first-btn {
     height: 1.5px;
 }
 
-/* ******************************************************** */
-
-/* This is for 'home' page */
-/* Content */
-.home-content {
-    position: relative;
-    margin-left: 16.66vw;
-    margin-bottom: 8.33vh;
-    padding-bottom: 8.33vh;
-
-    border: 2px solid salmon;
-}
-.text-box {
-    background-color: #B5A36E;
-    border-radius: 30px;
-    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.25);
-    padding: 3% 3% 1% ;
-
-    /* border: 2px solid seagreen; */
-}
-.title, .description, .more-details {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5%;
-
-    /* border: 2px solid rgb(214, 214, 4); */
-}
-.title {
-    font-size: 60px;
-    font-weight: 700;
-    display: block;
-}
-.title-name {
-    font-size: 111px;
-    text-align: center;
-}
-.description {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-}
-.more-details {
-    font-size: 16px;
-    font-weight: 200px;
-    line-height: 21px;
-    text-decoration: underline;
-}
-
-/* ******************************************************** */
-
-/* This is for 'about' page */
-
-/* This is for every topic */
+/* topic in each page */
 .topic {
     display: flex;
     align-items: center;
@@ -231,8 +179,56 @@ h3.topic-text{
     background-color: #005246;
     height: 5px;
     flex: auto;
-    
 }
+
+/* ******************************************************** */
+
+/* This is for 'home' page */
+/* Content */
+.home-content {
+    position: relative;
+    margin-left: 16.66vw;
+    margin-bottom: 8.33vh;
+    padding-bottom: 8.33vh;
+
+    border: 2px solid salmon;
+}
+.text-box {
+    background-color: #B5A36E;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px 0 30px;
+
+    border: 2px solid seagreen;
+}
+.title, .description, .more-details {
+    margin-bottom: 30px;
+
+    border: 2px solid rgb(214, 214, 4);
+}
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    display: block;
+}
+.title-name {
+    font-size: 111px;
+    text-align: center;
+}
+.description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.more-details {
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+/* ******************************************************** */
+
+/* This is for 'about' page */
 
 /* Personal Block */
 /* .personal {
@@ -249,9 +245,6 @@ h3.topic-text{
     justify-content: space-around;
 }
 .personal-details-text {
-    font-weight: 300;
-    line-height: 1.5rem;
-    width: 41.66%;
     padding: 3%;
     margin: 3% 0;
     border-radius: 30px;
@@ -259,6 +252,10 @@ h3.topic-text{
     background-color: #B5A36E;
 
     /* border: 2px solid orchid; */
+}
+.personal-details-text p {
+    font-weight: 300;
+    line-height: 1.5rem;
 }
 .personal-details-pic {
     border-radius: 50%;
@@ -285,27 +282,38 @@ h3.topic-text{
 
     border: 2px solid saddlebrown;
 } */
-
-/* KMITL */
-.kmitl {
+.pic-container {
+    margin-right: 45px;
+    border: 1px solid black;
+}
+.school {
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
     margin: 3% 0;
 
-    /* border: 2px solid teal; */
+    border: 2px solid teal;
 }
-.kmitl-timeline {
-    width: 65%;
+.school-timeline {
+    width: 100%;
     font-weight: 300;
     line-height: 1.5rem;
-    padding: 3%;
+    padding: 15px;
     border-radius: 30px;
     background-color: #B5A36E;
-    margin-left: 15%;
+    display: flex;
+
+    /* border: 1px solid black; */
 }
-.kmitl-timeline .indent {
-    text-indent: 125px;
+.timeline-container {
+    border: 1px solid black;
+}
+/* KMITL */
+.timeline, .timeline-details {
+    border: 1px solid #005246;
+}
+.timeline {
+    min-width: fit-content;
 }
 .kmitl-pic {
     border-radius: 50%;
@@ -318,24 +326,6 @@ h3.topic-text{
     right: 8px;
 }
 /* DSU */
-.dsu {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    margin: 3% 0;
-
-    /* border: 2px solid #005246; */
-}
-.dsu-timeline {
-    font-weight: 300;
-    line-height: 1.5rem;
-    padding: 3%;
-    border-radius: 30px;
-    background-color: #B5A36E;
-    display: flex;
-    align-items: center;
-    margin-left: 15%;
-}
 .dsu-pic {
     border-radius: 50%;
     width: 150px;
@@ -360,13 +350,14 @@ i {
 .skills-details {
     background-color: #B5A36E;
     border-radius: 30px;
+    padding: 15px;
 
     /* border: 2px solid slateblue; */
 }
 .skills-details-text {
-    font-weight: 300;
-    line-height: 1.5rem;
-    padding: 2%;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px;
 }
 .skills-details-lan {
     display: flex;
@@ -377,14 +368,14 @@ i {
 }
 .lan-text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 2rem;
 }
 /* .first-col, .second-col {
     
     border: 2px solid rgb(208, 21, 37);
 } */
-.html, .css, .js, .py, .node, .sql {
+.lan {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -455,7 +446,7 @@ i {
 }
 ::placeholder, input[type=text] {
     color:  #005246;
-    font-size: 16px;
+    font-size: 14px;
 }
 .row input[type=text] {
     background-color: #FFF0CA;
@@ -465,7 +456,7 @@ i {
     padding-left: 0.5em;
 }
 #message {
-    height: 20vh;
+    height: 120px;
 }
 .send-btn {
     text-align: end;
@@ -500,17 +491,17 @@ input[type=submit] {
 .col-12 {width: 100%;}
 
 /* For Mobile */
-@media only screen and (max-width: 700px) {
-    
+@media only screen and (max-width: 900px) {
     .all-elements {
         /* width: 100vw; */
     }
 
     /* fixed position navbar */
     .bar {
-        /* width: 100vw; */
-        height: 75px;
+        width: 100vw;
+        height: 70px;
         flex-direction: row;
+        justify-content: center;
         z-index: 1;
 
         border: 2px solid hotpink;
@@ -518,24 +509,25 @@ input[type=submit] {
     a.logo {
         font-size: 60px;
         margin-top: 0;
-        width: fit-content;
     
         border: 1px solid aquamarine;
     }
     .navbar {
-        width: fit-content;
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     
-        /* border: 2px solid indigo; */
+        border: 2px solid rgb(221, 47, 47);
     }
     .navbar a {
         display: none;
+        margin-top: 0;
     
         border: 2px solid indigo;
     }
     .navbar a.icon {
         display: block;
-        float: right;
+        text-align: right;
     }
     .fa-bars {
         color: #005246;
@@ -553,12 +545,53 @@ input[type=submit] {
         display: none;
     }
 
+    /* Content area of each page */
     .content-area {
-        margin: 0 0 8.33vh 0;
-
-        border: 2px solid rgb(67, 247, 229);
+        margin: 0 50px 8.33vh 50px;
     }
-    
+
+    /* Header for each page */
+    /* .header {
+
+        border: 2px solid teal;
+    } */
+    .header h2 {
+        font-size: 50px;
+
+        border: 2px solid indianred;
+    }
+
+    /* Subtitle for each page */
+    .subtitle {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        border: 2px solid rgb(15, 235, 85);
+    }
+    .subtitle p {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    /* topic in each page */
+    .topic {
+
+        border: 1px solid orangered;
+    }
+    h3.topic-text{
+        font-size: 16px;
+        font-weight: 500;
+        
+        border: 2px solid rgb(0, 47, 255);
+    }
+    .topic-line {
+        height: 2px;    
+    }
+
+    /* ----------------------------------- */
+    /* Home page */
+    /* ----------------------------------- */
+
     .home-content {
         margin-top: 8.33vh;
         margin-left: 0;
@@ -566,4 +599,213 @@ input[type=submit] {
         padding-bottom: 8.33vh;
         /* width: 100vw; */
     }
+    .title, .description, .more-details {
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .title-name {
+        font-size: 70px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .description {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .more-details {
+        font-size: 12px;
+    }
+
+    /* ----------------------------------- */
+        /* About page */
+    /* ----------------------------------- */
+
+
+    /* Personal Block */
+    .personal {
+
+        border: 2px solid orangered;
+    }
+    .topic, .personal-details {
+
+        border: 2px solid olivedrab;
+    }
+    .personal-details {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 20px 0;
+
+        justify-content: space-around;
+    }
+    .personal-details-text {
+        padding: 15px;
+        margin: 10px 0;
+        width: 100%;
+    
+        border: 2px solid orchid;
+    }
+    .personal-details-text p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5rem;
+    }  
+    .personal-details-pic {
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        top: 0;
+
+        border: 2px solid rgb(45, 45, 45);
+    }
+    .personal-details-pic img {
+        position: relative;
+        top: -35px;
+    }
+
+    /* Education Block */
+    .edu {
+        border: 2px solid rgb(252, 0, 206);
+    }
+    .edu-details {
+        /* display: flex;
+        align-items: center;
+        justify-content: space-around; */
+
+        border: 2px solid saddlebrown;
+    } 
+    .pic-container {
+        margin-right: 45px;
+
+        border: 1px solid black;
+    }
+    .school {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    
+        border: 2px solid teal;
+    }
+    .timeline-container {
+        width: 100%;
+        border: 1px solid black;
+    }
+    .school-timeline {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-weight: 300;
+        font-size: 14px ;
+        line-height: 1.5rem;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: #B5A36E;
+    
+        border: 1px solid red;
+    }
+    /* KMITL */
+    .timeline, .timeline-details {
+        border: 1px solid #005246;
+    }
+    .timeline, .timeline-details {
+        min-width: fit-content;
+        text-align: center;
+    }
+    .timeline span {
+        display: none;
+    }
+    .kmitl-pic {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        /* border: 2px solid black; */
+    }
+    .kmitl-pic img {
+        position: relative;
+        right: 8px;
+    }
+    /* DSU */
+    .dsu-pic {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        background-color: #FFF;
+    
+        /* border: 2px solid black; */
+    }
+    
+    /* Skills Block */
+    i {
+        font-size: 8px;
+    }
+    .skills-details {
+        background-color: #B5A36E;
+        border-radius: 30px;
+        padding: 10px;
+
+        border: 2px solid slateblue;
+    }
+    .skills-details-text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .lan-text {
+        font-size: 12px;
+    }
+
+    /* ----------------------------------- */
+        /* Contact page */
+    /* ----------------------------------- */
+
+    /* This is for 'contact' page */
+    .form {
+        padding: 25px 0 25px;
+        display: block;
+        align-items: center;
+
+        /* border: 2px solid red; */
+    }
+    .form-block {
+        box-shadow: none;
+
+        /* border: 2px solid black; */
+    }
+    .row {
+        /* margin: 3% 0; */
+        padding: 0;
+
+        /* border: 1px solid palevioletred; */
+    }
+    .first-row {
+        display: block;
+    }
+    .name-field, .subject-field {
+        width: 100%;
+
+        /* border: 1px solid black; */
+    }
+    ::placeholder, input[type=text] {
+        color:  #005246;
+        font-size: 13px;
+    }
+    .row input[type=text] {
+        margin-bottom: 10px;
+    }
+    #message {
+        height: 100px;
+    }
+    .send-btn {
+        text-align: center;
+    }
+    input[type=submit] {
+        background-color: #005246;
+        padding: 8px 18px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 }
+
