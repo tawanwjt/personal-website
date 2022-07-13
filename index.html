@@ -13,6 +13,40 @@
 
 <body>
     <div class="all-elements">
+        <!-- Overlay full screen navbar -->
+        <div class="overlay" id="overlay-nav">
+            <div class="close-btn-container">
+                <a href="javascript:void(0)" class="close-icon" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <div class="overlay-content">
+                <a href="#home" class="first-btn" onclick="closeNav()">
+                    <div class="btn">
+                        <div class="btn-pic hover-resize"><img src="./picture/home.png" alt="home" width="45px"></div>
+                        <div class="btn-text hover-resize">Home</div>
+                    </div>
+                </a>
+                <a href="#about" onclick="closeNav()">
+                    <div class="btn">
+                        <div class="btn-pic hover-resize"><img src="./picture/about.png" alt="about" width="45px"></div>
+                        <div class="btn-text hover-resize">About</div>
+                    </div>
+                </a>
+                <a href="#project" onclick="closeNav()">
+                    <div class="btn">
+                        <div class="btn-pic hover-resize"><img src="./picture/project.png" alt="project" width="45px"></div>
+                        <div class="btn-text hover-resize">Project</div>
+                    </div>
+                </a>
+                <a href="#contact" onclick="closeNav()">
+                    <div class="btn">
+                        <div class="btn-pic hover-resize"><img src="./picture/contact.png" alt="contact" width="45px"></div>
+                        <div class="btn-text hover-resize">Contact</div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
         <!-- site navbar -->
         <div class="bar">
@@ -43,7 +77,7 @@
                         <div class="btn-text hover-resize">Contact</div>
                     </div>
                 </a>
-                <a href="#" class="icon">
+                <a href="javascript:void(0)" class="icon" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="line-divider"></div>
@@ -355,6 +389,8 @@
             </div>
         </footer>
     </div>
+    
+    <script src="app.js"></script>i
 </body>
 
 </html>
