@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 html, body {    
     width: 100%;
@@ -18,10 +18,11 @@ html, body {
     /* border: none !important; */
 }
 
-/* .all-elements {
+.all-elements {
+    overflow: hidden;
 
-    border: 2px solid red;
-} */
+    /* border: 2px solid red; */
+}
 
 /* Overlay navbar */
 .overlay {
@@ -527,16 +528,16 @@ footer {
     /* Overlay navbar */
     .overlay {
         display: block;
+        z-index: 2;
+        background-color: rgba(181,163,110, 0.9);
+        
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 2;
         top: 0;
         right: 0;
-        background-color: rgba(181,163,110, 0.9);
         overflow-x: hidden;
         transition: 0.6s;
-
     }
     .close-btn-container {
         height: 70px;
@@ -778,20 +779,23 @@ footer {
 
         border: 2px solid saddlebrown;
     }  */
-    .pic-container {
-        margin-right: 0;
-
-        border: 1px solid black;
-    }
     .school {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        text-align: center;
         margin: 15px 0;
     
         border: 2px solid teal;
     }
+    .pic-container {
+        margin: 0 auto;
+        width: fit-content;
+
+        border: 1px solid black;
+    }
     .timeline-container {
         width: 100%;
+        display: none;
+
         border: 1px solid black;
     }
     .school-timeline {
@@ -914,11 +918,14 @@ footer {
     /* ----------------------------------- */
     footer {
         width: 100vw;
-        height: 120px;
+        height: auto;
+        bottom: 0;
         display: block;
         background-color: #B5A36E;
         color: #FFF0CA;
         font-size: 21px;
+        
+        border: 1px solid saddlebrown;
     }
     .footer-container {
         width: 100%;
@@ -927,7 +934,7 @@ footer {
         flex-direction: column;
         align-items: center;
 
-        /* border: 1px solid rebeccapurple; */
+        border: 1px solid rebeccapurple;
     }
     .footer-container .social {
         display: flex;
@@ -935,7 +942,7 @@ footer {
         width: 100%;
         margin-top: 12px;
     
-        /* border: 2px solid palevioletred; */
+        border: 2px solid palevioletred;
     }
     .footer-container .line-divider {
         background-color: rgba(255, 240, 202, 0.4);
@@ -945,18 +952,19 @@ footer {
         margin-bottom: 4px;
         display: block;
 
-        /* border: 1px solid seagreen; */
+        border: 1px solid seagreen;
     }
     .footer-container .logo {
         font-size: 45px;
         height: 40px;
-        /* border: 1px solid saddlebrown; */
+
+        border: 1px solid saddlebrown;
     } 
     .footer-container .copyright {
         margin-top: 6px;
         text-align: center;
 
-        /* border: 1px solid slateblue; */
+        border: 1px solid slateblue;
     }
     .footer-container .copyright p {
         font-size: 7px;
